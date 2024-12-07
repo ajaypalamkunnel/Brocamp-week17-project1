@@ -19,3 +19,13 @@ library.addBook(ebook2)
 
 
 library.listBooks()
+
+console.log('\nSearching for "1984":');
+library.searchBook('1984');
+
+
+console.log('\nSearching for "TypeScript Handbook":');
+library.searchBook('TypeScript Handbook');
+
+console.log('\nDownload an e-book:');
+console.log(ebook1.download());
