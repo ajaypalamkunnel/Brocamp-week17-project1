@@ -1,0 +1,15 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+const Book_1 = require("./models/Book");
+const EBook_1 = require("./models/EBook");
+const library_1 = require("./services/library");
+const library = new library_1.Library();
+const book1 = new Book_1.Book('The Great Gatsby', 'F. Scott Fitzgerald', 1925);
+const book2 = new Book_1.Book('1984', 'George Orwell', 1949);
+const ebook1 = new EBook_1.EBook('JavaScript: The Good Parts', 'Douglas Crockford', 2008, 5);
+const ebook2 = new EBook_1.EBook('TypeScript Handbook', 'Microsoft', 2020, 10);
+library.addBook(book1);
+library.addBook(book2);
+library.addBook(ebook1);
+library.addBook(ebook2);
+library.listBooks();
